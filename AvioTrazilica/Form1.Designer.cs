@@ -45,13 +45,20 @@
             this.ColumnBrojPutnika = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnValuta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnUkupnaCijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ColumnKratica = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAerodrom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtBoxKratica = new System.Windows.Forms.TextBox();
+            this.buttonPotragaKratice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBoxPolazniAerodrom
             // 
             this.txtBoxPolazniAerodrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxPolazniAerodrom.Location = new System.Drawing.Point(14, 14);
+            this.txtBoxPolazniAerodrom.Location = new System.Drawing.Point(14, 117);
             this.txtBoxPolazniAerodrom.Margin = new System.Windows.Forms.Padding(5);
             this.txtBoxPolazniAerodrom.Name = "txtBoxPolazniAerodrom";
             this.txtBoxPolazniAerodrom.Size = new System.Drawing.Size(150, 26);
@@ -61,7 +68,7 @@
             // txtBoxBrojPutnika
             // 
             this.txtBoxBrojPutnika.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxBrojPutnika.Location = new System.Drawing.Point(14, 50);
+            this.txtBoxBrojPutnika.Location = new System.Drawing.Point(13, 14);
             this.txtBoxBrojPutnika.Margin = new System.Windows.Forms.Padding(5);
             this.txtBoxBrojPutnika.Name = "txtBoxBrojPutnika";
             this.txtBoxBrojPutnika.Size = new System.Drawing.Size(150, 26);
@@ -71,7 +78,7 @@
             // txtBoxValuta
             // 
             this.txtBoxValuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxValuta.Location = new System.Drawing.Point(14, 86);
+            this.txtBoxValuta.Location = new System.Drawing.Point(13, 66);
             this.txtBoxValuta.Margin = new System.Windows.Forms.Padding(5);
             this.txtBoxValuta.Name = "txtBoxValuta";
             this.txtBoxValuta.Size = new System.Drawing.Size(150, 26);
@@ -81,7 +88,7 @@
             // datePolazak
             // 
             this.datePolazak.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datePolazak.Location = new System.Drawing.Point(354, 50);
+            this.datePolazak.Location = new System.Drawing.Point(192, 64);
             this.datePolazak.Margin = new System.Windows.Forms.Padding(5);
             this.datePolazak.Name = "datePolazak";
             this.datePolazak.Size = new System.Drawing.Size(200, 26);
@@ -90,7 +97,7 @@
             // datePovratak
             // 
             this.datePovratak.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datePovratak.Location = new System.Drawing.Point(564, 50);
+            this.datePovratak.Location = new System.Drawing.Point(433, 64);
             this.datePovratak.Margin = new System.Windows.Forms.Padding(5);
             this.datePovratak.Name = "datePovratak";
             this.datePovratak.Size = new System.Drawing.Size(200, 26);
@@ -99,10 +106,10 @@
             // buttonPretrazi
             // 
             this.buttonPretrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPretrazi.Location = new System.Drawing.Point(896, 43);
+            this.buttonPretrazi.Location = new System.Drawing.Point(14, 165);
             this.buttonPretrazi.Margin = new System.Windows.Forms.Padding(5);
             this.buttonPretrazi.Name = "buttonPretrazi";
-            this.buttonPretrazi.Size = new System.Drawing.Size(150, 40);
+            this.buttonPretrazi.Size = new System.Drawing.Size(619, 40);
             this.buttonPretrazi.TabIndex = 6;
             this.buttonPretrazi.Text = "Pretraži letove";
             this.buttonPretrazi.UseVisualStyleBackColor = true;
@@ -111,7 +118,7 @@
             // txtBoxOdredisniAerodrom
             // 
             this.txtBoxOdredisniAerodrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxOdredisniAerodrom.Location = new System.Drawing.Point(174, 14);
+            this.txtBoxOdredisniAerodrom.Location = new System.Drawing.Point(192, 117);
             this.txtBoxOdredisniAerodrom.Margin = new System.Windows.Forms.Padding(5);
             this.txtBoxOdredisniAerodrom.Name = "txtBoxOdredisniAerodrom";
             this.txtBoxOdredisniAerodrom.Size = new System.Drawing.Size(150, 26);
@@ -122,7 +129,7 @@
             // 
             this.labelDatumPolaska.AutoSize = true;
             this.labelDatumPolaska.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatumPolaska.Location = new System.Drawing.Point(350, 17);
+            this.labelDatumPolaska.Location = new System.Drawing.Point(188, 39);
             this.labelDatumPolaska.Name = "labelDatumPolaska";
             this.labelDatumPolaska.Size = new System.Drawing.Size(120, 20);
             this.labelDatumPolaska.TabIndex = 8;
@@ -132,7 +139,7 @@
             // 
             this.labelDatumPovratka.AutoSize = true;
             this.labelDatumPovratka.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDatumPovratka.Location = new System.Drawing.Point(560, 17);
+            this.labelDatumPovratka.Location = new System.Drawing.Point(429, 39);
             this.labelDatumPovratka.Name = "labelDatumPovratka";
             this.labelDatumPovratka.Size = new System.Drawing.Size(126, 20);
             this.labelDatumPovratka.TabIndex = 9;
@@ -149,9 +156,9 @@
             this.ColumnBrojPutnika,
             this.ColumnValuta,
             this.ColumnUkupnaCijena});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 121);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 213);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1145, 621);
+            this.dataGridView1.Size = new System.Drawing.Size(1238, 529);
             this.dataGridView1.TabIndex = 10;
             // 
             // ColumnPolazniAerodrom
@@ -174,7 +181,7 @@
             // 
             // ColumnBrojPresjedanja
             // 
-            this.ColumnBrojPresjedanja.HeaderText = "Broj presjedanja";
+            this.ColumnBrojPresjedanja.HeaderText = "Broj presjedanja polazak/povratak";
             this.ColumnBrojPresjedanja.Name = "ColumnBrojPresjedanja";
             // 
             // ColumnBrojPutnika
@@ -193,11 +200,67 @@
             this.ColumnUkupnaCijena.Name = "ColumnUkupnaCijena";
             this.ColumnUkupnaCijena.Width = 200;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(726, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(383, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Ovdje možete provjeriti kraticu za aerodrom koji vas zanima";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnKratica,
+            this.ColumnAerodrom});
+            this.dataGridView2.Location = new System.Drawing.Point(901, 50);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(350, 157);
+            this.dataGridView2.TabIndex = 12;
+            // 
+            // ColumnKratica
+            // 
+            this.ColumnKratica.HeaderText = "Kratica";
+            this.ColumnKratica.Name = "ColumnKratica";
+            // 
+            // ColumnAerodrom
+            // 
+            this.ColumnAerodrom.HeaderText = "Aerodrom";
+            this.ColumnAerodrom.Name = "ColumnAerodrom";
+            this.ColumnAerodrom.Width = 200;
+            // 
+            // txtBoxKratica
+            // 
+            this.txtBoxKratica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxKratica.Location = new System.Drawing.Point(729, 50);
+            this.txtBoxKratica.Name = "txtBoxKratica";
+            this.txtBoxKratica.Size = new System.Drawing.Size(166, 26);
+            this.txtBoxKratica.TabIndex = 13;
+            this.txtBoxKratica.Text = "Unesite grad";
+            // 
+            // buttonPotragaKratice
+            // 
+            this.buttonPotragaKratice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPotragaKratice.Location = new System.Drawing.Point(729, 86);
+            this.buttonPotragaKratice.Name = "buttonPotragaKratice";
+            this.buttonPotragaKratice.Size = new System.Drawing.Size(166, 40);
+            this.buttonPotragaKratice.TabIndex = 14;
+            this.buttonPotragaKratice.Text = "Potraži kraticu";
+            this.buttonPotragaKratice.UseVisualStyleBackColor = true;
+            this.buttonPotragaKratice.Click += new System.EventHandler(this.buttonPotragaKratice_Click);
+            // 
             // FormAvioTrazilica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 754);
+            this.ClientSize = new System.Drawing.Size(1265, 754);
+            this.Controls.Add(this.buttonPotragaKratice);
+            this.Controls.Add(this.txtBoxKratica);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.labelDatumPovratka);
             this.Controls.Add(this.labelDatumPolaska);
@@ -211,6 +274,7 @@
             this.Name = "FormAvioTrazilica";
             this.Text = "Avio Tražilica";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,6 +299,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnBrojPutnika;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnValuta;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnUkupnaCijena;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnKratica;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAerodrom;
+        private System.Windows.Forms.TextBox txtBoxKratica;
+        private System.Windows.Forms.Button buttonPotragaKratice;
     }
 }
 

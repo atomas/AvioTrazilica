@@ -33,7 +33,7 @@
             this.txtBoxValuta = new System.Windows.Forms.TextBox();
             this.datePolazak = new System.Windows.Forms.DateTimePicker();
             this.datePovratak = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonPretrazi = new System.Windows.Forms.Button();
             this.txtBoxOdredisniAerodrom = new System.Windows.Forms.TextBox();
             this.labelDatumPolaska = new System.Windows.Forms.Label();
             this.labelDatumPovratka = new System.Windows.Forms.Label();
@@ -96,16 +96,17 @@
             this.datePovratak.Size = new System.Drawing.Size(200, 26);
             this.datePovratak.TabIndex = 5;
             // 
-            // button1
+            // buttonPretrazi
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(896, 43);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Pretraži letove";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonPretrazi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPretrazi.Location = new System.Drawing.Point(896, 43);
+            this.buttonPretrazi.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonPretrazi.Name = "buttonPretrazi";
+            this.buttonPretrazi.Size = new System.Drawing.Size(150, 40);
+            this.buttonPretrazi.TabIndex = 6;
+            this.buttonPretrazi.Text = "Pretraži letove";
+            this.buttonPretrazi.UseVisualStyleBackColor = true;
+            this.buttonPretrazi.Click += new System.EventHandler(this.buttonPretrazi_Click);
             // 
             // txtBoxOdredisniAerodrom
             // 
@@ -178,7 +179,7 @@
             // 
             // ColumnBrojPutnika
             // 
-            this.ColumnBrojPutnika.HeaderText = "BrojPutnika";
+            this.ColumnBrojPutnika.HeaderText = "Broj putnika";
             this.ColumnBrojPutnika.Name = "ColumnBrojPutnika";
             // 
             // ColumnValuta
@@ -201,7 +202,7 @@
             this.Controls.Add(this.labelDatumPovratka);
             this.Controls.Add(this.labelDatumPolaska);
             this.Controls.Add(this.txtBoxOdredisniAerodrom);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonPretrazi);
             this.Controls.Add(this.datePovratak);
             this.Controls.Add(this.datePolazak);
             this.Controls.Add(this.txtBoxValuta);
@@ -222,7 +223,7 @@
         private System.Windows.Forms.TextBox txtBoxValuta;
         private System.Windows.Forms.DateTimePicker datePolazak;
         private System.Windows.Forms.DateTimePicker datePovratak;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonPretrazi;
         private System.Windows.Forms.TextBox txtBoxOdredisniAerodrom;
         private System.Windows.Forms.Label labelDatumPolaska;
         private System.Windows.Forms.Label labelDatumPovratka;

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AvioTrazilica
 {
-    public partial class Form1 : Form
+    public partial class FormAvioTrazilica : Form
     {
-        public Form1()
+        public FormAvioTrazilica()
         {
             InitializeComponent();
         }
